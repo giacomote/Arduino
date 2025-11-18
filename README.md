@@ -12,8 +12,12 @@ file.
 `libraries/` directory.
 
 ## 💻 Projects
-- [x] `Basic_LED` --> Toggle a LED by sending a string through a serial connection.
 - [x] `DHT22` --> Use a DHT22 sensor to read temperature and relative humidity.
+- [x] `IMU` --> Measure acceleration using the onboard IMU sensor (on the Uno WiFi Rev2 board).
+- [x] `LED` --> Toggle a LED by sending a string through a serial connection.
+- [x] `loadCell` --> Measure weight using a load cell.
+- [x] `Motor` --> Control an external motor (fan) using an N-MOS transistor.
+- [x] `MotorPWM` --> Control an external motor (fan) using an N-MOS transistor and a PWM.
 
 ## 📂 Project structure
 - `libraries/` --> Some useful libraries.

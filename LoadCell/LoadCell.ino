@@ -1,5 +1,5 @@
 /*
-Measure weight with a load cell.
+Measure weight using a load cell.
 
 Connect the Arduino and it will start measuring weight (in grams).
 
