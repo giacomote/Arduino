@@ -5,8 +5,6 @@ The program receives an input number, which can be in the [0, 100] range.
 That number is the percentage of the maximum speed to run the motor (fan).
 
 NOTE: Pay attention not to send newline or carriage return at the end.
-
-The circuit used is the one shown here: https://www.tinkercad.com/things/9lSNsUSi3QE-motor
 */
 
 int duty;

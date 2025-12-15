@@ -2,9 +2,7 @@
 Use a DHT22 sensor to read temperature and relative humidity.
 
 To correctly test this code, connect the DHT sensor to digital pin 10 and open the serial port plotter.
-The used serial port plotter is the one here: https://github.com/CieNTi/serial_port_plotter
-
-The correct circuit configuration is the one at this link: https://www.tinkercad.com/things/6s134OM8pnk-dht22
+NOTE: The used serial port plotter is the one here: https://github.com/CieNTi/serial_port_plotter.
 */
 
 #include <DHT.h>

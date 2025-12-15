@@ -3,8 +3,6 @@ Sense motion using a radar (Doppler) motion sensor.
 
 The used sensor is an RCWL-0516.
 An active buzzer is also used to let you know if a motion is detected.
-
-The circuit configuration is the one indicated here: https://www.tinkercad.com/things/if7ZBTEpc1Q-motionsensor
 */
 
 const int sensorPin = 2;
