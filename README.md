@@ -16,6 +16,7 @@ file.
 - [x] `IMU` --> Measure acceleration using the onboard IMU sensor (on the Uno WiFi Rev2 board).
 - [x] `LED` --> Toggle a LED by sending a string through a serial connection.
 - [x] `loadCell` --> Measure weight using a load cell.
+- [x] `MotionSensor` --> Sense motion using a radar (Doppler) motion sensor.
 - [x] `Motor` --> Control an external motor (fan) using an N-MOS transistor.
 - [x] `MotorPWM` --> Control an external motor (fan) using an N-MOS transistor and a PWM.
 
