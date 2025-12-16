@@ -19,6 +19,7 @@ file.
 - [x] `MotionSensor` --> Sense motion using a radar (Doppler) motion sensor.
 - [x] `Motor` --> Control an external motor (fan) using an N-MOS transistor.
 - [x] `MotorPWM` --> Control an external motor (fan) using an N-MOS transistor and a PWM.
+- [x] `Phototransistor` --> Detect the presence of infrared light using a phototransistor.
 
 ## 📂 Project structure
 - `libraries/` --> Some useful libraries.
