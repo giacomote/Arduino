@@ -7,11 +7,12 @@ An infrared LED is required to illuminate the phototransistor.
 NOTE: The LED and phototransistor must be perfectly aligned.
 */
 
-const int phototransistor = 2;
+#define PHOTO_PIN 2
+
 int lightDetected;
 
 void setup() {
-  pinMode(phototransistor, INPUT);
+  pinMode(PHOTO_PIN, INPUT);
   pinMode(LED_BUILTIN, OUTPUT);
 
   Serial.begin(9600);
@@ -19,7 +20,7 @@ void setup() {
 }
 
 void loop() {
-  lightDetected = digitalRead(phototransistor);
+  lightDetected = digitalRead(PHOTO_PIN);
 
   if (lightDetected == 1) {
     Serial.println("Light Detected!");

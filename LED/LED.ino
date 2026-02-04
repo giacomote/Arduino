@@ -5,13 +5,15 @@ If the sent string is "ON\n", then toggle on a LED on pin 10.
 If the sent string is "OFF\n", then toggle off the LED.
 */
 
+#define LED_PIN 10
+
 String s;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(10, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
 
-  digitalWrite(10, LOW);
+  digitalWrite(LED_PIN, LOW);
 }
 
 void loop() {
@@ -20,5 +22,5 @@ void loop() {
   }
 
   if (s == "ON") digitalWrite(10, HIGH);
-  else if (s == "OFF") digitalWrite(10, LOW);
+  else if (s == "OFF") digitalWrite(LED_PIN, LOW);
 }

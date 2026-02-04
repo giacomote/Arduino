@@ -7,14 +7,16 @@ That number is the percentage of the maximum speed to run the motor (fan).
 NOTE: Pay attention not to send newline or carriage return at the end.
 */
 
+#define MOTOR_PIN 10
+
 int duty;
 int pwmValue;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(10, OUTPUT);
+  pinMode(MOTOR_PIN, OUTPUT);
 
-  digitalWrite(10, LOW);
+  digitalWrite(MOTOR_PIN, LOW);
 }
 
 void loop() {
@@ -25,5 +27,5 @@ void loop() {
   duty = constrain(duty, 0, 100);  // fix "duty" in a certain range
   pwmValue = map(duty, 0, 100, 0, 255);  // convert to percentage
 
-  analogWrite(10, pwmValue);  // activate PWM (default 490 Hz frequency)
+  analogWrite(MOTOR_PIN, pwmValue);  // activate PWM (default 490 Hz frequency)
 }

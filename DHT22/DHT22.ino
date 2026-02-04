@@ -8,10 +8,10 @@ NOTE: The used serial port plotter is the one here: https://github.com/CieNTi/se
 #include <DHT.h>
 
 // DHT sensor configuration
-#define DHTPIN 10
-#define DHTTYPE DHT22
+#define DHT_PIN 10
+#define DHT_TYPE DHT22
 
-DHT dht(DHTPIN, DHTTYPE);
+DHT dht(DHT_PIN, DHT_TYPE);
 
 // Global variables
 char tempStr[10];

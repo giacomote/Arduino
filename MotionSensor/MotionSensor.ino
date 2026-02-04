@@ -5,13 +5,14 @@ The used sensor is an RCWL-0516.
 An active buzzer is also used to let you know if a motion is detected.
 */
 
-const int sensorPin = 2;
-const int buzzerPin = 3;
+#define SENSOR_PIN 2
+#define BUZZER_PIN 3
+
 int motionDetected;
 
 void setup() {
-  pinMode(sensorPin, INPUT);
-  pinMode(buzzerPin, OUTPUT);
+  pinMode(SENSOR_PIN, INPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
 
   Serial.begin(9600);
@@ -20,14 +21,14 @@ void setup() {
 }
 
 void loop() {
-  motionDetected = digitalRead(sensorPin);
+  motionDetected = digitalRead(SENSOR_PIN);
 
   if (motionDetected == HIGH) {
     Serial.println("Motion detected!");
-    digitalWrite(buzzerPin, HIGH);
+    digitalWrite(BUZZER_PIN, HIGH);
     digitalWrite(LED_BUILTIN, HIGH);
   } else {
-    digitalWrite(buzzerPin, LOW);
+    digitalWrite(BUZZER_PIN, LOW);
     digitalWrite(LED_BUILTIN, LOW);
   }
 

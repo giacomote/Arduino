@@ -6,13 +6,15 @@ If the string is "ON\n", the motor (fan) is switched on.
 If the string is "OFF\n", the motor (fan) is switched off.
 */
 
+#define MOTOR_PIN 10
+
 String s;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(10, OUTPUT);
+  pinMode(MOTOR_PIN, OUTPUT);
 
-  digitalWrite(10, LOW);
+  digitalWrite(MOTOR_PIN, LOW);
 }
 
 void loop() {
@@ -20,6 +22,6 @@ void loop() {
     s = Serial.readStringUntil('\n');
   }
 
-  if (s == "ON") digitalWrite(10, HIGH);
-  else if (s == "OFF") digitalWrite(10, LOW);
+  if (s == "ON") digitalWrite(MOTOR_PIN, HIGH);
+  else if (s == "OFF") digitalWrite(MOTOR_PIN, LOW);
 }
